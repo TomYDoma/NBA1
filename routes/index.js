@@ -16,4 +16,10 @@ router.get('/admin', function(req, res, next) {
 router.get('/teams', function(req, res, next) {
   res.render('teams', { title: 'Express' });
 });
+router.get('/teamdeteil', function(req, res, next) {
+  res.render('teamdeteil', { title: 'Express' });
+});
+
+
+
 module.exports = router;
