@@ -1,0 +1,150 @@
+.zagolovok{
+  margin-top: 35px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+.zagolovok:hover{
+  color: red;
+}
+
+img{
+  height: 100px;
+  float: left;
+}
+
+.cont{
+  height: 200px;
+  width: 400px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+  margin: 25px auto;
+}
+.btn{
+
+  position:relative;
+  top:75px;
+  left:45px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+
+
+}
+
+.bblock {
+  float: left; /*Задаем обтекание*/
+  line-height: 120px;/*Высота строки +  верт. центрирования текста*/
+  font-size: 40px;
+  background-color: #3f51b5;
+  width: 3%;
+  text-align: center; /*Центрируем текст по горизонтали*/
+}
+.dblock{
+  width: 97%;
+  height: 100px;
+  /*margin-top: 40px;*/
+  float: left; /*Задаем обтекание*/
+  line-height: 120px;/*Высота строки +  верт. центрирования текста*/
+  font-size: 40px;
+
+  text-align: center; /*Центрируем текст по горизонтали*/
+  background-color: #3f51b5;
+  color: white;
+}
+
+.teamsblock{
+  float: left; /*Задаем обтекание*/
+  line-height: 150px;/*Высота строки +  верт. центрирования текста*/
+  margin-right: 15px;
+}
+
+.dvb{
+  text-align: center;
+  font-size: 16pt;
+}
+ .contein{
+   margin: auto;
+   height: 400px;
+   width: 600px;
+   border-style: solid;
+   border-color: black;
+   border-width: 1px;
+   border-radius: 10px;
+ }
+
+ .foot{
+   font-size: 14pt;
+   text-align: center;
+   color: white;
+ }
+ footer{
+   margin-top: 40px;
+   background-color: #3f51b5;
+   height: 23px;
+ }
+
+/***************Таблица с командами***************************************************************/
+.tabs {
+  font-size: 0;
+}
+
+.tabs>input[type="radio"] {
+  display: none;
+}
+
+.tabs>div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  border: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+
+.tabs>label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  padding: 2px 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+
+.tabs>label:not(:first-of-type) {
+  border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/******Фото команды*************************************************************/
+.photo {
+  width: 132px;
+  height: 132px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.personPhoto {
+  width: auto;
+  height: 100%;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NBA</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel='stylesheet' href='css/chief-slider.css'/>
+    <link rel='stylesheet' href='css/style.css'/>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
+    <script src="javascripts/chief-slider.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('.slider', {
+                loop: true
+            });
+        });
+    </script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+            'Segoe UI Symbol';
+        }
+
+        .container {
+            /*max-width: 700px;*/
+            margin: 45px auto;
+            width: 100%;
+        }
+
+        .slider__wrapper {
+            overflow: hidden;
+        }
+
+        .slider__item {
+            flex: 0 0 33.3333333333%;
+            max-width: 33.3333333333%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 7rem;
+        }
+
+        .slider__item:nth-child(1) {
+            background-color: #f44336;
+        }
+
+        .slider__item:nth-child(2) {
+            background-color: #9c27b0;
+        }
+
+        .slider__item:nth-child(3) {
+            background-color: #3f51b5;
+        }
+
+        .slider__item:nth-child(4) {
+            background-color: #03a9f4;
+        }
+
+        .slider__item:nth-child(5) {
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+<div class="bblock"><img src="images/150px-National_Basketball_Association_logo.png" alt="BUMB"></div>
+<div class="dblock"><h1 class="zagolovok">NBA Manegement System</h1></div>
+
+
+<h3 class="dvb">Welcome to use this NBA Manegement system, you can <br> redirect to different pages according to your
+    role by clicking the buttions bellow</h3>
+<div class="cont">
+    <a class="btn btn-primary" href="/visitor">Visitor</a>
+    <a class="btn btn-primary" href="/admin">Admin</a>
+</div>
+
+
+<div class="container">
+
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <!-- Контент 1 слайда -->
+                    1
+                </div>
+                <div class="slider__item">
+                    <!-- Контент 2 слайда -->
+                    2
+                </div>
+                <div class="slider__item">
+                    <!-- Контент 3 слайда -->
+                    3
+                </div>
+                <div class="slider__item">
+                    <!-- Контент 4 слайда -->
+                    4
+                </div>
+                <div class="slider__item">
+                    <!-- Контент 5 слайда -->
+                    5
+                </div>
+            </div>
+        </div>
+        <a href="#" class="slider__control" data-slide="prev"></a>
+        <a href="#" class="slider__control" data-slide="next"></a>
+    </div>
+
+</div>
+</body>
+<footer style="height: 28px" > <h1 class="foot" >The current season is 2016-2017, and the NBA already has a history of 71 years.</h1></footer>
+
+</html>
