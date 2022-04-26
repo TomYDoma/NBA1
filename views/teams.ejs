@@ -28,157 +28,27 @@
     <input type="radio" name="tab-btn" id="tab-btn-2" value="">
     <label for="tab-btn-2">Western</label>
     <div id="content-1">
-      <table width="100%" border="1" cellpadding="1" cellspacing="1" bordercolor="#333333" style="background-color:#ffffff" class="table table-bordered">
+      <table class="table table-bordered">
         <tr>
           <td style="background-color: darkgrey">Atlantic</td>
           <td style="background-color: darkgrey">Central</td>
           <td style="background-color: darkgrey">Southeast</td>
         </tr>
+       <% for (let team of teams) {%>
         <tr>
-          <td style="width: 30%"  >
+            <td style="width: 30%"  >
 
-              <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <a href="/teamdeteil"><img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En"></a>
+                <div class="teamsblock" >  <article class="item">    <div class="photo">
+                            <a href="/teamdeteil"><%=team.Logo%></a>
 
-                </div> </article> </div>
-              <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
+                        </div> </article> </div>
+                <div class="teamsblock"><h2><%=team.Name%></h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
 
             </td>
-          <td style="width: 30%"  >
 
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
         </tr>
-        <tr>
-          <td style="width: 30%"  >
+          <%}%>
 
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-        </tr>
-        <tr>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-        </tr>
-        <tr>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-        </tr>
-        <tr>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-        </tr>
       </table>
     </div>
     <div id="content-2">
@@ -188,147 +58,15 @@
           <td style="background-color: darkgrey">Pacific</td>
           <td style="background-color: darkgrey">Soothwest</td>
         </tr>
-        <td style="width: 30%"  >
+          <tr>
 
-          <div class="teamsblock" >  <article class="item">    <div class="photo">
-                <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-              </div> </article> </div>
-          <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-        </td>
-        <td style="width: 30%"  >
-
-          <div class="teamsblock" >  <article class="item">    <div class="photo">
-                <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-              </div> </article> </div>
-          <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-        </td>
-        <td style="width: 30%"  >
-
-          <div class="teamsblock" >  <article class="item">    <div class="photo">
-                <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-              </div> </article> </div>
-          <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-        </td>
-        </tr>
-        <tr>
           <td style="width: 30%"  >
 
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
+              <div class="teamsblock" >  <article class="item">    <div class="photo">
+                          <a href="/teamdeteil"><img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En"></a>
 
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-        </tr>
-        <tr>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-        </tr>
-        <tr>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-        </tr>
-        <tr>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
-
-          </td>
-          <td style="width: 30%"  >
-
-            <div class="teamsblock" >  <article class="item">    <div class="photo">
-                  <img class="personPhoto" alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTnQ10XsARegWrtgIwH8LiUMMNeggR5CDtHdVDUPFZwdTA-En">
-
-                </div> </article> </div>
-            <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
+                      </div> </article> </div>
+              <div class="teamsblock"><h2>Team name</h2> <div class="teamsblock" style="margin-top: 50px; line-height: 0px"><a  style="margin-right: 20px" href="/index">Roster</a> <a style="margin-right: 20px" href="/index">Matchup</a><a  href="/index">First Lineup</a></div></div>
 
           </td>
         </tr>
